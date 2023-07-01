@@ -27,3 +27,6 @@ dist-ssr
 
 # vscode
 .vscode
+src/assets/laptop.jpg
+public/greek.glb
+public/geo.min.glb
