@@ -42,21 +42,22 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React JS Developer",
-    icon: mobile,
-  },
-  {
-    title: "Video Production",
-    icon: backend,
-  },
-  {
     title: "Prototyping",
     icon: creator,
   },
+  {
+    title: "Web Development",
+    icon: web,
+  },
+  {
+    title: "React JS App Development",
+    icon: mobile,
+  },
+  {
+    title: "UX / UI Design",
+    icon: backend,
+  }
+  
 ];
 
 const technologies = [
@@ -81,8 +82,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Shopify",
+    icon: shopify,
   },
   {
     name: "Tailwind CSS",
@@ -93,7 +94,7 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "Prisma / PlanetScale / Supabase / PostGres / U",
     icon: mongodb,
   },
   {
@@ -109,7 +110,7 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
+    name: "After Effects",
     icon: docker,
   },
 ];
@@ -198,49 +199,53 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ESG Forum",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Web RTC Real-time video streaming",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stripe",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "supabase",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://esg-forum.com",
   },
   {
-    name: "Job IT",
+    name: "Decentraland Villa",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "react three fiber",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "unity",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "blender",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://villa.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Futur Ink",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -249,7 +254,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ssr",
         color: "green-text-gradient",
       },
       {
