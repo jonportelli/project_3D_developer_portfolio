@@ -40,8 +40,8 @@ const EarthCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enablePan={false}
-          autoRotate
-          autoRotateSpeed={0.5}
+          // autoRotate
+          // autoRotateSpeed={0.5}
           minAzimuthAngle={Math.PI / 6}
           maxAzimuthAngle={Math.PI / 0}
           damping={0.4}
@@ -49,8 +49,8 @@ const EarthCanvas = () => {
           minDistance={-20}
           maxDistance={30}
           maxSpeed={1}
-          minPolarAngle={Math.PI / 6}
-          maxPolarAngle={Math.PI / 2}
+          // minPolarAngle={Math.PI / 6}
+          // maxPolarAngle={Math.PI / 2}
         />
           {/* <CameraControls makeDefault maxZoom={0.5} /> */}
         {/* <color attach="background" args={["#d0d0d0"]} /> */}
