@@ -15,11 +15,11 @@ const Hero = () => {
         </div> */}
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-[#7f7f7f]`}>
-            Hello, I'm <span className='text-[#393939]'>Jonathan</span>
+          <h1 className={`${styles.heroHeadText} text-primary @apply bg-[linear-gradient(90deg,#000,#adadad)] bg-clip-text text-transparent `}>
+            How can we help?
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-black-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
+          <p className={`${styles.heroSubText} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>
+            We create websites, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
         </div>

@@ -156,8 +156,8 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Creative Frontend Developer",
+    company_name: "Max Planck Society",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
