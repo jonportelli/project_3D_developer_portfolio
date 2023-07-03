@@ -33,21 +33,28 @@ const EarthCanvas = () => {
         fov: 90,
         near: 0.1,
         far: 200,
-        position: [0, 0, 21],
+        position: [0, 0, 23],
+       
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          damping={0.5}
-          distance={1.5}
-          maxSpeed={0.5}
-          enableZoom={true}
+          enablePan={false}
+          autoRotate
+          autoRotateSpeed={0.5}
+          minAzimuthAngle={Math.PI / 6}
+          maxAzimuthAngle={Math.PI / 0}
+          damping={0.4}
+          minZoom={0.1}
+          minDistance={-20}
+          maxDistance={30}
+          maxSpeed={1}
+          minPolarAngle={Math.PI / 6}
           maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
         />
-          <CameraControls makeDefault />
+          {/* <CameraControls makeDefault maxZoom={0.5} /> */}
         {/* <color attach="background" args={["#d0d0d0"]} /> */}
-        <fog attach="fog" args={["#d0d0d0", 8, 30]} />
+        <fog attach="fog" args={["#d0d0d0", 10, 30]} />
         <Earth />
 
         <Preload all />

@@ -6,13 +6,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-white'>
-        <div className=' bg-cover bg-no-repeat bg-center'>
+        <div className='bg-center bg-no-repeat bg-cover '>
           <Navbar />
           <Hero />
         </div>
         <About />
         <Experience />
-        <Tech />
+        {/* <Tech /> */}
         <Works />
         {/* <Feedbacks /> */}
         <div className='relative z-0'>

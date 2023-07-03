@@ -19,10 +19,12 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  esgforum,
+  decentraland,
+  futurink,
   threejs,
+  ut,
+  mplogo,
 } from "../assets";
 
 export const navLinks = [
@@ -117,9 +119,22 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Creative Frontend Developer",
+    company_name: "Max Planck Society",
+    icon: mplogo,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Creating a cohesive set of unique React JS Components including; image galleries, video players, 3D model viewers. ",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive input into the design and iteration process.",
+    ],
+  },
+  {
     title: "React.js Developer",
     company_name: "UnderScore Technology Ltd",
-    icon: starbucks,
+    icon: ut,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -130,21 +145,8 @@ const experiences = [
     ],
   },
   {
-    title: "React JS Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Web Developer",
-    company_name: "Shopify",
+    company_name: "Freelance",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
@@ -155,28 +157,16 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Creative Frontend Developer",
-    company_name: "Max Planck Society",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Jonathan proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    name: "Jane Pool",
+    designation: "CEO",
+    company: "FemtechConf",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
@@ -199,16 +189,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "ESG Forum",
+    name: "The ESG Forum",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Live Event website with video streaming and real-time chat integration. User authentication with premium content features.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "Web RTC Real-time video streaming",
+        name: "Web RTC Real-time streaming",
         color: "pink-text-gradient",
       },
       {
@@ -220,34 +210,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: esgforum,
     source_code_link: "https://esg-forum.com",
-  },
-  {
-    name: "Decentraland Villa",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react three fiber",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "unity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "blender",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://villa.vercel.app/",
   },
   {
     name: "Futur Ink",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A no-code blogging platform allowing linked in users to sign in and post a blog post in minutes.",
     tags: [
       {
         name: "nextjs",
@@ -262,9 +231,30 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: futurink,
+    source_code_link: "https://futur.ink",
   },
+  {
+    name: "Decentraland Villa",
+    description:
+      "A Metaverse VR Experience built in Unity using the DCL API, Features Live streaming video screens and a secret roof party !",
+    tags: [
+      {
+        name: "react three fiber",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "unity",
+        color: "green-text-gradient",
+      },
+      {
+        name: "blender",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: decentraland,
+    source_code_link: "https://villa.vercel.app/",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

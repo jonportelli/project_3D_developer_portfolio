@@ -25,13 +25,18 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import esglogo from "./company/esglogo.png"
+import decentraland from "./futur-gallery.jpg";
+import esgforum from "./esgforum.jpg";
+import futurink from "./futurink.png";
+import ut from "./favicon.svg"
+import mplogo from "./company/mplogo.png"
 
 export {
   logo,
+  ut,
+  mplogo,
+  esglogo,
   backend,
   creator,
   mobile,
@@ -56,7 +61,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  decentraland,
+  esgforum,
+  futurink,
 };
