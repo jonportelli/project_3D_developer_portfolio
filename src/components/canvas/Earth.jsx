@@ -16,7 +16,7 @@ const Earth = () => {
     <directionalLight position={[4, 0, 0]} castShadow intensity={3} shadow-mapSize={2048} shadow-bias={-0.001}>
     <SoftShadows />
    
-    <primitive  object={earth.scene} scale={0.5} position-y={-5} position-x={0} rotation-y={-0.2} receiveShadow />
+    <primitive  object={earth.scene} scale={0.5} position-y={-9} position-x={-5} rotation-y={-0.5} receiveShadow />
     </directionalLight>
     </mesh>
   );
