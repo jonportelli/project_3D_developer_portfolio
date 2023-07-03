@@ -19,8 +19,8 @@ const Hero = () => {
             How can we help?
           </h1>
           <p className={`${styles.heroSubText} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>
-            We create websites, user <br className='sm:block hidden' />
-            interfaces and web applications
+            We make interactive websites, user <br className='sm:block hidden' />
+            interfaces and web applications.
           </p>
         </div>
       </div>
