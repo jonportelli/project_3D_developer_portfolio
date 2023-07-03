@@ -29,8 +29,9 @@ import esglogo from "./company/esglogo.png"
 import decentraland from "./futur-gallery.jpg";
 import esgforum from "./esgforum.jpg";
 import futurink from "./futurink.png";
-import ut from "./favicon.svg"
-import mplogo from "./company/mplogo.png"
+import ut from "./favicon.svg";
+import mplogo from "./company/mplogo.png";
+import rivari from "./rivari.png";
 
 export {
   logo,
@@ -64,4 +65,5 @@ export {
   decentraland,
   esgforum,
   futurink,
+  rivari,
 };

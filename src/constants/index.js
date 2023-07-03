@@ -25,6 +25,7 @@ import {
   threejs,
   ut,
   mplogo,
+  rivari,
 } from "../assets";
 
 export const navLinks = [
@@ -233,6 +234,27 @@ const projects = [
     ],
     image: futurink,
     source_code_link: "https://futur.ink",
+  },
+  {
+    name: "Finca Rivari",
+    description:
+      "A no-code blogging platform allowing linked in users to sign in and post a blog post in minutes.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ssr",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: rivari,
+    source_code_link: "https://lahaci.netlify.app",
   },
   {
     name: "Decentraland Villa",
