@@ -33,7 +33,7 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
+    id: "works",
     title: "Work",
   },
   {
@@ -253,7 +253,7 @@ const projects = [
       },
     ],
     image: decentraland,
-    source_code_link: "https://villa.vercel.app/",
+    source_code_link: "https://fair-fox.surge.sh/",
   }
 ];
 
