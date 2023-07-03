@@ -63,14 +63,15 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='flex items-center justify-end flex-1 sm:hidden'>
+        <div className='flex items-center justify-end flex-1 sm:hidden '>
+        {/* <div className='bg-black filter-invert(1)'> */}
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            className='w-[28px] h-[28px] object-contain bg-black invert'
             onClick={() => setToggle(!toggle)}
           />
-
+        {/* </div> */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
