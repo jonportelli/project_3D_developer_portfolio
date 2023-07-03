@@ -9,7 +9,7 @@ const styles = {
     "font-secondary text-[#dfd9ff] lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 
   sectionHeadText:
-    "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+    "text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionHeadTextRev:
     "text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:

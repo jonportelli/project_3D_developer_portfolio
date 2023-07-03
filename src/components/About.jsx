@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='object-contain w-16 h-16'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-black text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
