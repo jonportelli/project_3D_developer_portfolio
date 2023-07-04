@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+// import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <div className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -32,7 +32,7 @@ const ServiceCard = ({ index, title, icon }) => (
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const About = () => {
@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        We do things a little differently, balancing design and function to go beyond for 
+        By taking the time to listen to the needs of our clients and creating a brief that balances design and function to go beyond for 
         our clients. Using 3D artists and experts, we can showcase complex products through the browser
         Using TypeScript and JavaScript, and expertise in frameworks like React, Next JS, Node.js, and
         Three.js. Using microservices, APIs and various frameworks, libraries, I enjoy collaborating with clients to

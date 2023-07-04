@@ -49,13 +49,13 @@ const Navbar = () => {
           </p> */}
         </Link>
 
-        <ul className='flex-row hidden gap-10 list-none sm:flex'>
+        <ul className='flex-row hidden gap-10 list-none sm:flex '>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-secondary" : "text-black"
-              } hover:text-black text-[18px] font-medium cursor-pointer`}
+              } hover:text-black text-[18px] font-medium cursor-pointer `}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

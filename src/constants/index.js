@@ -256,27 +256,27 @@ const projects = [
     image: rivari,
     source_code_link: "https://lahaci.netlify.app",
   },
-  {
-    name: "Decentraland Villa",
-    description:
-      "A Metaverse VR Experience built in Unity using the DCL API, Features Live streaming video screens and a secret roof party !",
-    tags: [
-      {
-        name: "react three fiber",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "unity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "blender",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: decentraland,
-    source_code_link: "https://fair-fox.surge.sh/",
-  }
+  // {
+  //   name: "Decentraland Villa",
+  //   description:
+  //     "A Metaverse VR Experience built in Unity using the DCL API, Features Live streaming video screens and a secret roof party !",
+  //   tags: [
+  //     {
+  //       name: "react three fiber",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "unity",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "blender",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: decentraland,
+  //   source_code_link: "https://fair-fox.surge.sh/",
+  // }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
