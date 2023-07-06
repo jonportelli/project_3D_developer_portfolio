@@ -1,4 +1,4 @@
-import { EarthCanvas, ArchCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { EarthCanvas, ArchCanvas, BallCanvas, ComputersCanvas, StarsCanvas, VillaCanvas, RoomCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -9,6 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Start from "./Start";
+import Calendar from "./Calendar"
 
 
 export {
@@ -27,4 +28,8 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   Start,
+  Calendar,
+  VillaCanvas,
+  RoomCanvas,
+  
 };
