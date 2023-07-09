@@ -29,7 +29,6 @@ dist-ssr
 .vscode
 src/assets/laptop.jpg
 public/greek.glb
-public/geo.min.glb
 src/components/canvas/Thanos.jsx
 src/assets/white-waves.jpg
 public/thanos/textures/M_Lrg_Jim_Helmet_specularGlossiness.png
