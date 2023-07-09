@@ -17,11 +17,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-primary @apply bg-[linear-gradient(90deg,#000,#adadad)] bg-clip-text text-transparent `}>
-            How can we help?
+            IS YOUR BUSINESS EVOLVING?
           </h1>
           <p className={`${styles.heroSubText} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>
-            We make interactive websites, user <br className='sm:block hidden' />
-            interfaces and web applications.
+            Artificial Intelligence is already used by your competition. <br className='sm:block hidden' /> Find out how you can embrace it today.<br className='sm:block hidden' />
           </p>
         </div>
       </div>
