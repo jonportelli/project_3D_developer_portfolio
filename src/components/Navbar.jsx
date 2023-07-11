@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { motion } from 'framer-motion';
+import '../index.css'
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -36,29 +39,41 @@ const Navbar = () => {
       <div className='flex items-center justify-between w-full mx-auto max-w-7xl'>
         <Link
           to='/'
-          className='flex items-center gap-2'
+          className='flex items-center gap-4'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='object-contain w-14 h-14' />
-          {/* <p className='text-black text-[18px] font-bold cursor-pointer flex '>
-            Jonathan &nbsp;
-            <span className='hidden sm:block'> | Creative Engineer</span>
-          </p> */}
+          <img src={logo} alt='logo' className='object-contain w-32' />
+          <p className='text-black text-[18px] font-bold cursor-pointer flex '>
+            &nbsp;
+            <span className='hidden '>_Creative _Engineering</span>
+          </p>
         </Link>
 
-        <ul className='flex-row hidden gap-10 list-none sm:flex '>
+        {/* <ul className='flex-row hidden gap-10 list-none sm:flex '> */}
+        <ul class="secTopNavi" id="navLink">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-secondary" : "text-black"
               } hover:text-black text-[18px] font-medium cursor-pointer `}
-              onClick={() => setActive(nav.title)}
-            >
+             
+              onClick={() => setive(nav.title)}
+            > 
+            
+            <motion.button 
+            whileHover={{
+              scale: 1.1,
+              animation: {
+                'textDecoration': 'line-grow 1s linear'
+              },
+            }}>
+            
               <a href={`#${nav.id}`}>{nav.title}</a>
+              </motion.button>
             </li>
           ))}
         </ul>
@@ -84,6 +99,7 @@ const Navbar = () => {
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-black" : "text-secondary"
                   }`}
+                  
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
