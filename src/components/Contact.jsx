@@ -8,59 +8,7 @@ import { slideIn } from "../utils/motion";
 // import { Switch } from '@headlessui/react'
 
 const Contact = () => {
-  const [formFields, setFormFields] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const [errors, setErrors] = useState({});
-  const [isFormValid, setIsFormValid] = useState(false);
-
-  useEffect(() => {
-    validateForm();
-  }, [formFields]);
-
-  const validateForm = () => {
-    let newErrors = {};
-    let formIsValid = true;
-
-    if (!formFields.name) {
-      formIsValid = false;
-      newErrors["name"] = "*Please enter your name.";
-    }
-
-    if (!formFields.email) {
-      formIsValid = false;
-      newErrors["email"] = "*Please enter your email.";
-    }
-
-    if (typeof formFields.email !== "undefined") {
-      // regex for email validation
-      var pattern = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/i);
-      if (!pattern.test(formFields.email)) {
-        formIsValid = false;
-        newErrors["email"] = "*Please enter valid email.";
-      }
-    }
-
-    if (!formFields.message) {
-      formIsValid = false;
-      newErrors["message"] = "*Please enter your message.";
-    }
-
-    setErrors(newErrors);
-    setIsFormValid(formIsValid);
-  }
-
-  const onChange = (e) => {
-    setFormFields({
-      ...formFields,
-      [e.target.name]: e.target.value,
-    });
-  }
-
-
-
+  
   return (
     <div
       className={`xl:mt-0 flex xl:flex-row flex-col-reverse gap-0 overflow-hidden`}
@@ -91,7 +39,7 @@ const Contact = () => {
             Drop us your details and we'll be in touch shortly.
           </p>
         </div>
-        <form action="https://rake.red/api/jp/r3f-rivari" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form action="https://rake.red/api/jp/underscore" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-1">
             <div>
               <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -104,10 +52,9 @@ const Contact = () => {
                   id="name"
                   autoComplete="given-name"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  onChange={onChange}
-                  value={formFields.name}
+                  required
                 />
-                {errors['name'] && <p>{errors['name']}</p>}
+              
               </div>
             </div>
             
@@ -122,45 +69,27 @@ const Contact = () => {
                   id="email"
                   autoComplete="email"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  onChange={onChange}
-                  value={formFields.email}
+                  required
 
                 />
-                {errors['email'] && <p>{errors['email']}</p>}
+                
               </div>
             </div>
-            {/* <div className="sm:col-span-2">
-              <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
-                Phone number
-              </label>
-                <input
-                  type="tel"
-                  name="phone-number"
-                  id="phone-number"
-                  autoComplete="tel"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  onChange={onChange}
-                />
-                {errors['phone-number'] && <p>{errors['phone-number']}</p>}
-              </div>
-            </div> */}
+            
             <div className="sm:col-span-2">
               <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
                 Message
               </label>
               <div className="mt-2.5">
-              {errors['message'] && <p>{errors['message']}</p>}
+            
                 <textarea
                   name="message"
                   id="message"
                   rows={4}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={''}
-                  onChange={onChange}
-                  value={formFields.message}
-               
+                  required
                 />
-                
               </div>
             </div>
             
@@ -169,13 +98,10 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  disabled={!isFormValid}
-        
+                  // disabled={!isFormValid}
                 >
                   Let's talk
                 </button>
-               
-               
               </div>
         </form>
       </div>
