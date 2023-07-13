@@ -11,7 +11,6 @@ const Contact = () => {
   
   return (
     <div
-      className={`xl:mt-0 flex xl:flex-row flex-col-reverse gap-0 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -20,7 +19,7 @@ const Contact = () => {
         {/* <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
        */}
-      <div className="isolate bg-white px-6 py-16 sm:py-24 lg:px-8">
+      <div className="isolate bg-white px-6 py-2 sm:py-4 lg:px-0">
           <div
             className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
             aria-hidden="true"
@@ -40,12 +39,12 @@ const Contact = () => {
           </p>
         </div>
         <form action="https://rake.red/api/jp/underscore" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-1">
+          <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-1">
             <div>
               <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
                 Name
               </label>
-              <div className="mt-2.5">
+              <div className="mt-1.7">
                 <input
                   type="text"
                   name="name"
@@ -62,7 +61,7 @@ const Contact = () => {
               <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
                 Email
               </label>
-              <div className="mt-2.5">
+              <div className="mt-1.7">
                 <input
                   type="email"
                   name="email"
@@ -80,7 +79,7 @@ const Contact = () => {
               <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
                 Message
               </label>
-              <div className="mt-2.5">
+              <div className="mt-1.7">
             
                 <textarea
                   name="message"
@@ -94,10 +93,10 @@ const Contact = () => {
             </div>
             
           </div>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-row justify-center">
                 <button
                   type="submit"
-                  className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="block w-24 rounded-md bg-indigo-600 px-0 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   // disabled={!isFormValid}
                 >
                   Let's talk

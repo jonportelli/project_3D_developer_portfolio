@@ -14,8 +14,8 @@
 }
 
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
+  margin-top: -20px;
+  padding-bottom: 40px;
   display: block;
 }
 
@@ -283,8 +283,8 @@
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   transform-origin:left center;
-  -webkit-transition: all 0.13s ease-in-out 0s;
-  transition: all 0.13s ease-in-out 0s;
+  -webkit-transition: all 0.17s ease-in-out 0s;
+  transition: all 0.17s ease-in-out 0s;
 }
 #navLink a:hover:before, h3:hover:before {
       visibility: visible;
@@ -312,8 +312,8 @@
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   transform-origin:left center;
-  -webkit-transition: all 0.13s ease-in-out 0s;
-  transition: all 0.13s ease-in-out 0s;
+  -webkit-transition: all 0.17s ease-in-out 0s;
+  transition: all 0.17s ease-in-out 0s;
 }
 #projLink h3:hover:before {
       visibility: visible;

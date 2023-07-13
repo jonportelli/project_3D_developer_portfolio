@@ -50,8 +50,8 @@ const About = () => {
         By taking the time to listen to the needs of our clients and creating a brief that balances design and function to go beyond for 
         our clients. Using 3D artists and experts, we can showcase complex products through the browser
         Using TypeScript and JavaScript, and expertise in frameworks like React, Next JS, Node.js, and
-        Three.js. Using microservices, APIs and various frameworks, libraries, I enjoy collaborating with clients to
-        create efficient, scalable, and user-friendly solutions that achieve and surpass their goals and expectations. 
+        Three.js. Using microservices, APIs and various frameworks and libraries. We only want to work with clients where we can bring provable results through designing processes and systems to automate their existing workflows. 
+        We do this by creating efficient, scalable, and user-friendly solutions that achieve and surpass their goals and expectations. 
         Let's work together to bring your ideas to life!
       </motion.p>
 
