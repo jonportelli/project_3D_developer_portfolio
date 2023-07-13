@@ -45,11 +45,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='object-contain w-32' />
-          <p className='text-black text-[18px] font-bold cursor-pointer flex '>
-            &nbsp;
-            <span className='hidden '>_Creative _Engineering</span>
-          </p>
+          <img src={logo} alt='logo' className='object-contain w-20 mt-2' />
+         
         </Link>
 
         {/* <ul className='flex-row hidden gap-10 list-none sm:flex '> */}

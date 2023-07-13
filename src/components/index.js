@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Start from "./Start";
 import Calendar from "./Calendar"
+import Footer from "./Footer";
 
 
 export {
@@ -31,5 +32,5 @@ export {
   Calendar,
   VillaCanvas,
   RoomCanvas,
-  
+  Footer,
 };

@@ -54,12 +54,10 @@ const ProjectCard = ({
         <motion.button 
             whileHover={{
               scale: 1.1,
-              
             }}>
-             <h3 onClick={() => window.open(source_code_link, "_blank")} className="text-black font-bold text-[24px]" id="navlink">{name}</h3>
+             <h3 onClick={() => window.open(source_code_link, "_blank")} className="text-black font-bold text-[24px]" id="projLink">{name}</h3>
             
-              </motion.button>
-         
+        </motion.button>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
