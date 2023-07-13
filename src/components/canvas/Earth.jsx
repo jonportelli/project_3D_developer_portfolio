@@ -45,7 +45,7 @@ return (
   <group {...props} dispose={null}>
       <group ref={group}>
         <mesh geometry={nodes.geo.geometry} castShadow receiveShadow>
-          <MeshDistortMaterial color="#ffffff" flatShading roughness={1} metalness={0.5} factor={15} speed={3} />
+          <MeshDistortMaterial color="#ffffff" flatShading roughness={1} metalness={0.5} factor={30} speed={3} />
         </mesh>
         <mesh geometry={nodes.geo.geometry}>
           <meshBasicMaterial wireframe />
@@ -60,7 +60,7 @@ return (
           {`Poimandres,\nThe vision of Hermes`}
         </Text>
       </group> */}
-      <SoftShadows ref={shadow} opacity={0.3} rotation-x={-Math.PI / 2} position={[0, -1.51, 0]} />
+      <SoftShadows ref={shadow} opacity={0.3} rotation-x={-Math.PI / 2.5} position={[0, -1.51, 0]} />
     </group>
 )
 }
@@ -88,13 +88,15 @@ const EarthCanvas = () => {
           enablePan={false}
           enableZoom={false}
           autoRotate
+          orthographicCamera
           // autoRotateSpeed={0.5}
           // minAzimuthAngle={Math.PI / 6}
           // maxAzimuthAngle={Math.PI / 0}
           damping={0.4}
-          minZoom={0.1}
-          // minDistance={-20}
-          // maxDistance={30}
+          minZoom={1}
+          // maxZoom={300}
+          minDistance={-20}
+          maxDistance={40}
           maxSpeed={1}
           // minPolarAngle={Math.PI / 6}
           // maxPolarAngle={Math.PI / 2}
@@ -102,7 +104,7 @@ const EarthCanvas = () => {
           {/* <CameraControls makeDefault maxZoom={0.5} /> */}
         {/* <color attach="background" args={["#d0d0d0"]} /> */}
         <fog attach="fog" args={["#d0d0d0", 10, 30]} />
-        <Earth scale={1} position={[-1, -1, 0.5]} rotation= {[0, 3, 5]} />
+        <Earth scale={1} position={[0, 0, 0.5]} rotation= {[0, 0, 0]} orthographicCamera />
         <Light />
         <Preload all />
       </Suspense>
