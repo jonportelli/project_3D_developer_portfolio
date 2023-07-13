@@ -58,7 +58,7 @@ const Navbar = () => {
                 active === nav.title ? "text-secondary" : "text-black"
               } hover:text-black text-[18px] font-medium cursor-pointer `}
              
-              onClick={() => setive(nav.title)}
+              onClick={() => setActive(nav.title)}
             > 
             
             <motion.button 

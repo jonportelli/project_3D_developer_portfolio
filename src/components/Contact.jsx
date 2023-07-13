@@ -96,7 +96,7 @@ const Contact = () => {
           <div className="mt-10 flex flex-row justify-center">
                 <button
                   type="submit"
-                  className="block w-24 rounded-md bg-indigo-600 px-0 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="block w-24 rounded-md bg-gray-600 px-0 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   // disabled={!isFormValid}
                 >
                   Let's talk
