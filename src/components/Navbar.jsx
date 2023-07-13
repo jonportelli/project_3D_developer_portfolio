@@ -42,7 +42,7 @@ const Navbar = () => {
           className='flex items-center gap-4'
           onClick={() => {
             setActive("");
-            window.scrollTo(0, 0);
+            window.scrollTo(50, 50);
           }}
         >
           <img src={logo} alt='logo' className='object-contain w-20 mt-2' />
@@ -64,9 +64,7 @@ const Navbar = () => {
             <motion.button 
             whileHover={{
               scale: 1.1,
-              animation: {
-                'textDecoration': 'line-grow 1s linear'
-              },
+              
             }}>
             
               <a href={`#${nav.id}`}>{nav.title}</a>

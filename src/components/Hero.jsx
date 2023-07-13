@@ -25,7 +25,7 @@ const Hero = () => {
             Artificial Intelligence is already being used by your competition. <br className='sm:block hidden' /> 
           </p>
           <p className={`${styles.heroSubText2} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>
-            We can give you the automation edge. <br className='sm:block hidden' /> 
+            Let us give you the automation edge. <br className='sm:block hidden' /> 
           </p>
          
          
