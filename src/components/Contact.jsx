@@ -4,6 +4,7 @@ import { styles } from "../styles";
 // import { ArchCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import "../styles.js";
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 // import { Switch } from '@headlessui/react'
 
@@ -33,7 +34,7 @@ const Contact = () => {
             />
       </div>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Let's talk</h2>
+         <h2 className={styles.sectionHeadTextRev}>Let's talk</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Drop us your details and we'll be in touch shortly.
           </p>
