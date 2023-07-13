@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ArchCanvas } from "./canvas";
+// import { ArchCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -106,12 +106,12 @@ const Contact = () => {
         </form>
       </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <ArchCanvas />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

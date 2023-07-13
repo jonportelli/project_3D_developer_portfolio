@@ -32,6 +32,7 @@ import futurink from "./futurink.png";
 import ut from "./favicon.svg";
 import mplogo from "./company/mplogo.png";
 import rivari from "./rivari.png";
+import link from "./link-white.png";
 
 export {
   logo,
@@ -66,4 +67,5 @@ export {
   esgforum,
   futurink,
   rivari,
+  link
 };

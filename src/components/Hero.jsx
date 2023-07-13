@@ -16,7 +16,7 @@ const Hero = () => {
         </div> */}
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-primary @apply bg-[linear-gradient(90deg,#000,#adadad)] bg-clip-text text-transparent `}>
+          <h1 className={`${styles.heroHeadText} text-primary @apply bg-[linear-gradient(90deg,#000,#adadad)] bg-clip-text text-transparent`}>
             IS YOUR BUSINESS EVOLVING?
           </h1>
           <p className={`${styles.heroSubText} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>

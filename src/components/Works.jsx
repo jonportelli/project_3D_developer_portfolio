@@ -3,10 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { link } from "../assets";
+
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import '../index.css'
 
 const ProjectCard = ({
   index,
@@ -37,19 +39,27 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient'
+              className='flex items-center justify-center w-6 h-6 rounded-full cursor-pointer target-blank white-gradient bg-white'
             >
               <img
-                src={github}
+                src={link}
                 alt='source code'
                 className='object-contain w-1/2 h-1/2'
               />
             </div>
           </div>
         </div>
-
+        
         <div className='mt-5'>
-          <h3 className='text-black font-bold text-[24px]'>{name}</h3>
+        <motion.button 
+            whileHover={{
+              scale: 1.1,
+              
+            }}>
+             <h3 onClick={() => window.open(source_code_link, "_blank")} className="text-black font-bold text-[24px]" id="navlink">{name}</h3>
+            
+              </motion.button>
+         
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 

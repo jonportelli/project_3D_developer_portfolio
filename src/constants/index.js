@@ -197,19 +197,19 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "violet-text",
       },
       {
         name: "Web RTC Real-time streaming",
-        color: "pink-text-gradient",
+        color: "violet-text",
       },
       {
         name: "stripe",
-        color: "green-text-gradient",
+        color: "violet-text",
       },
       {
         name: "supabase",
-        color: "pink-text-gradient",
+        color: "violet-text",
       },
     ],
     image: esgforum,
@@ -222,15 +222,15 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "violet-text",
       },
       {
         name: "ssr",
-        color: "green-text-gradient",
+        color: "violet-text",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "violet-text",
       },
     ],
     image: futurink,
@@ -239,19 +239,19 @@ const projects = [
   {
     name: "Finca Rivari",
     description:
-      "A no-code blogging platform allowing linked in users to sign in and post a blog post in minutes.",
+      "An immersive, experimental 3D landing page design for Rivari. Transports you to another world !",
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "violet-text",
       },
       {
         name: "ssr",
-        color: "green-text-gradient",
+        color: "violet-text",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "violet-text",
       },
     ],
     image: rivari,
@@ -264,15 +264,15 @@ const projects = [
   //   tags: [
   //     {
   //       name: "react three fiber",
-  //       color: "blue-text-gradient",
+  //       color: "violet-text",
   //     },
   //     {
   //       name: "unity",
-  //       color: "green-text-gradient",
+  //       color: "violet-text",
   //     },
   //     {
   //       name: "blender",
-  //       color: "pink-text-gradient",
+  //       color: "violet-text",
   //     },
   //   ],
   //   image: decentraland,
