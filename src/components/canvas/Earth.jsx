@@ -78,7 +78,7 @@ const EarthCanvas = () => {
         fov: 90,
         near: 0.1,
         far: 200,
-        position: [-2, 0, 3],
+        position: [3, 3, -3],
        
       }}
     >
@@ -104,7 +104,7 @@ const EarthCanvas = () => {
           {/* <CameraControls makeDefault maxZoom={0.5} /> */}
         {/* <color attach="background" args={["#d0d0d0"]} /> */}
         <fog attach="fog" args={["#d0d0d0", 10, 30]} />
-        <Earth scale={1} position={[0, 0, 0.5]} rotation= {[0, 0, 0]} orthographicCamera />
+        <Earth scale={1.5} position={[0,-1,0.5]} rotation= {[0, 0, 0]} orthographicCamera />
         <Light />
         <Preload all />
       </Suspense>

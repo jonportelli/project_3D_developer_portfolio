@@ -22,7 +22,7 @@ const Hero = () => {
             IS YOUR BUSINESS EVOLVING?
           </h1>
           <p className={`${styles.heroSubText} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>
-            Automation is already used by your competition. <br className='sm:block hidden' /> 
+            Automation is already being used by your competition. <br className='sm:block hidden' /> 
           </p>
           {/* <p className={`${styles.heroSubText2} mt-2  @apply bg-[linear-gradient(180deg,#000,#adadad)] bg-clip-text text-transparent`}>
             Let us give you the automation edge. <br className='sm:block hidden' /> 
